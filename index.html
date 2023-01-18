@@ -20,7 +20,8 @@
         <div class="section-content-wrapper page-header-wrapper">
             <nav class="page-nav">
                 <a class="logo link" href="./index.html"> <span class="logo-first-part">Web</span>Studio</a>
-                <ul class="menu list">
+                
+                <ul class="header-menu menu list">
                     <li class="menu-item">
                         <a class="menu-link link is-active" href="./index.html">Studio</a>
                     </li>
@@ -32,10 +33,18 @@
                     </li>
                 </ul>
             </nav>
-            <ul class="list">
+            <ul class="header-contacts list">
                 <li><a class="mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li><a class="phone-number link" href="tel:+11(000)1111111">+11 (000) 111-11-11</a></li>
             </ul>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="32" height="22" viewBox="0 0 20 20">
+                    <use href="./img/sprite.svg#icon-menu-hamburger"></use>
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
         </div>
     </header>
     <main>
@@ -374,7 +383,7 @@
         </div>
     </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="modal-close-btn-icon" width="8" height="8">
@@ -433,9 +442,76 @@
                 <button type="submit" class="modal-form-submit">Send</button>
             </form>
         </div>
-    </div> -->
+        
+    </div>
 
-    <!-- <script src="./js/modal.js"></script> -->
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="modal-close-btn-icon" width="8" height="8" >
+                <use href="./img/sprite.svg#icon-close-modal"></use>
+                <!-- <path fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"></path> -->
+            </svg>
+        </button>
+    
+        <ul class="mobile-menu">
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="">Contacts</a>
+            </li>
+        </ul>
+        <ul class="mobile-contacts list">
+            <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link link accent" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="mobile-social-list list">
+            <li class="social-list-item">
+                <a href="" class="social-list-link">
+                    <svg class="social-list-icon" width="24" height="24">
+                        <use href="./img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social-list-item">
+                <a href="" class="social-list-link">
+                    <svg class="social-list-icon" width="24" height="24">
+                        <use href="./img/sprite.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social-list-item">
+                <a href="" class="social-list-link">
+                    <svg class="social-list-icon" width="24" height="24">
+                        <use href="./img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social-list-item">
+                <a href="" class="social-list-link">
+                    <svg class="social-list-icon" width="24" height="24">
+                        <use href="./img/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
