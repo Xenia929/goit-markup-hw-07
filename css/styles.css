@@ -331,10 +331,66 @@ body {
 .section-hero {
     padding-top: 112px;
     padding-bottom: 112px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/hero/bg.jpg);
     background-size: cover;
     background-color: #2E2F42;
+    background-repeat: no-repeat;
+    /* phone screen */
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/hero/bg-mob.jpg);
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .section-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/hero/bg-mob@2x.jpg);
+    }
+}
+
+
+@media screen and (max-width: 767.98px) {
+    .section-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/hero/bg-mob.jpg);
+    }
+}
+
+@media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2),
+(max-width: 767.98px) and (min-resolution: 192dpi),
+(max-width: 767.98px) and (min-resolution: 2dppx) {
+    .section-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/hero/bg-mob@2x.jpg);
+    }
+}
+
+/* screen >769 */
+@media screen and (min-width: 769px) {
+    .section-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/hero/bg-tabl.jpg);
+    }
+}
+
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2),
+(min-width: 769px) and (min-resolution: 192dpi),
+(min-width: 769px) and (min-resolution: 2dppx) {
+    .section-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/hero/bg-tabl@2x.jpg);
+    }
+}
+
+/* screen >1200 */
+@media screen and (min-width: 1200px) {
+    .section-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/hero/bg.jpg);
+    }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+(min-width: 1200px) and (min-resolution: 192dpi),
+(min-width: 1200px) and (min-resolution: 2dppx) {
+    .section-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/hero/bg-desk@2x.jpg);
+    }
+}
+
 
 /* tablet screen */
 @media screen and (min-width: 768px) {
