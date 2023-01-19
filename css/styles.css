@@ -1301,6 +1301,17 @@ body {
     padding: 72px 24px 24px 24px;
 }
 
+@media screen and (orientation: landscape) {
+    .backdrop{
+        overflow-y: auto;
+    }
+    .modal {
+        top: 10%;
+        transform: translateX(-50%);
+    }
+    
+}
+
 .modal-close-btn {
     position: absolute;
     top: 24px;
